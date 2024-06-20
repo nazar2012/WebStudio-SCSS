@@ -9,10 +9,6 @@
     --footer-number: rgba(255, 255, 255, 0.60);
 }
 
-body {
-    margin: 0;
-}
-
 a {
     text-decoration: none;
 }
@@ -27,7 +23,6 @@ ul {
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 0.78px;
 }
 
@@ -37,7 +32,6 @@ ul {
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 0.78px;
 }
 
@@ -47,7 +41,6 @@ ul {
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
     letter-spacing: 0.28px;
 }
 
@@ -61,7 +54,6 @@ ul {
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
     letter-spacing: 0.28px;
 }
 
@@ -134,7 +126,6 @@ ul {
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 0.78px;
 }
 
@@ -144,7 +135,6 @@ ul {
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 0.78px;
 }
 
