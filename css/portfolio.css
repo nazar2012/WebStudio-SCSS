@@ -9,14 +9,6 @@
     --footer-number: rgba(255, 255, 255, 0.60);
 }
 
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-}
-
 .logo {
     color: var(--logo-color);
     font-family: Raleway;
