@@ -22,11 +22,13 @@ body {
 
 .header{
     padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .hero {
     background: var(--footer-backround);
     padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .advantages{
@@ -40,11 +42,13 @@ body {
 
 .team{
     padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .footer{
     padding-top: 60px;
     padding-bottom: 60px;
+    background: var(--footer-backround);
 }
 .logo {
     color: var(--logo-color);
@@ -204,13 +208,6 @@ body {
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
-}
-
-.footer {
-    background: var(--footer-backround);
-    width: 1600px;
-    height: 252px;
-    flex-shrink: 0;
 }
 
 .footer-logo-span {
