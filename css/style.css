@@ -9,14 +9,43 @@
     --footer-number: rgba(255, 255, 255, 0.60);
 }
 
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    outline: 1px solid red;
+}
+
 body {
     font-family: ‘Inter’;
 }
 
-.hero {
-    background: var(--footer-backround);
+.header{
+    padding-top: 24px;
 }
 
+.hero {
+    background: var(--footer-backround);
+    padding-top: 200px;
+}
+
+.advantages{
+    padding-top: 94px;
+}
+
+.work{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.team{
+    padding-top: 94px;
+}
+
+.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 .logo {
     color: var(--logo-color);
     font-family: Raleway;

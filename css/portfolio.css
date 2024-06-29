@@ -9,6 +9,27 @@
     --footer-number: rgba(255, 255, 255, 0.60);
 }
 
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    outline: 1px solid red;
+}
+
+.header{
+    padding-top: 24px;
+}
+
+.hero{
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
+.portfolio{
+    padding-top: 50px;
+    padding-bottom: 94px;
+}
+
 .logo {
     color: var(--logo-color);
     font-family: Raleway;
@@ -110,6 +131,8 @@
     width: 1600px;
     height: 252px;
     flex-shrink: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo-span {
