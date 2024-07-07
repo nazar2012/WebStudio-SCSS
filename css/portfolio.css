@@ -7,26 +7,55 @@
     --team-backround: #F5F4FA;
     --footer-backround: #2F303A;
     --footer-number: rgba(255, 255, 255, 0.60);
+    --line-color: #ECECEC;
+    --background: #EEE;
 }
 
-.container{
+.portfolio-div {
+    border: 1px solid var(--background);
+    width: 370px;
+    height: 404px;
+}
+
+.line {
+    background: var(--line-color);
+    width: 1280px;
+    height: 1px;
+}
+
+.container {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    outline: 1px solid red;
 }
 
-.header{
+.header {
     padding-top: 24px;
     padding-bottom: 25px;
 }
 
-.hero{
+.header-css {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-list {
+    display: flex;
+    gap: 50px;
+}
+
+.hero {
     padding-top: 94px;
     padding-bottom: 50px;
 }
 
-.portfolio{
+.hero-list {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio {
     padding-bottom: 94px;
 }
 
@@ -42,7 +71,9 @@
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
+    line-height: normal;
     letter-spacing: 0.78px;
+    margin-right: 93px;
 }
 
 .logo-span {
@@ -52,6 +83,12 @@
     font-style: normal;
     font-weight: 700;
     letter-spacing: 0.78px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 50px;
+    margin-right: 334px;
 }
 
 .nav-link {
@@ -65,6 +102,11 @@
 
 .nav-link:hover {
     color: var(--accent-color);
+}
+
+
+.header-list {
+    display: flex;
 }
 
 .header-link {
@@ -91,12 +133,48 @@
     font-weight: 500;
     line-height: 1.625;
     letter-spacing: 0.48px;
-    width: 125px;
-    height: 38px;
-    flex-shrink: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin: 8px;
+    border: none;
 }
 
 .hero-btn:hover {
+    border-radius: 4px;
+    background: var(--accent-color);
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+    color: var(--main-backround);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.625;
+    letter-spacing: 0.48px;
+}
+
+.hero-btn-new {
+    border-radius: 4px;
+    background: var(--team-backround);
+    color: var(--title-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.625;
+    letter-spacing: 0.48px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 8px;
+    border: none;
+}
+
+.hero-btn-new:hover {
     border-radius: 4px;
     background: var(--accent-color);
     box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
@@ -119,6 +197,8 @@
     line-height: 2;
     letter-spacing: 1.08px;
     width: 322px;
+    margin-top: 20px;
+    margin-left: 24px;
 }
 
 .portfolio-text {
@@ -130,24 +210,26 @@
     line-height: 1.875;
     letter-spacing: 0.48px;
     width: 322px;
+    margin-left: 24px;
+    margin-bottom: 20px;
 }
 
-.footer-logo-span {
-    color: var(--accent-color);
-    font-family: Raleway;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    letter-spacing: 0.78px;
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-.footer-logo {
-    color: var(--main-backround);
-    font-family: Raleway;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    letter-spacing: 0.78px;
+.address{
+    margin-top: 20px;
+}
+
+.address-item{
+    margin-top: 9px;
+}
+
+.address-list{
+    margin-top: 9px;
 }
 
 .address-text {
@@ -167,4 +249,22 @@
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
+}
+
+.footer-logo-span {
+    color: var(--accent-color);
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+}
+
+.footer-logo {
+    color: var(--main-backround);
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.78px;
 }
