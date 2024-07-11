@@ -28,10 +28,7 @@ body {
     background: var(--footer-backround);
     padding-top: 200px;
     padding-bottom: 200px;
-    display: flex;
-    justify-content: center;
     text-align: center;
-    margin: 0 auto;
 }
 
 .advantages {
@@ -75,12 +72,24 @@ body {
     letter-spacing: 0.78px;
 }
 
-
-
 .nav-list {
     display: flex;
     gap: 50px;
     margin-right: 344px;
+}
+
+.nav-link-1{
+    color: var(--accent-color);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+
+.nav-link-1:hover {
+    color: var(--accent-color);
 }
 
 .nav-link {
@@ -126,8 +135,6 @@ body {
     letter-spacing: 2.64px;
     text-transform: uppercase;
     width: 696px;
-    display: flex;
-    justify-content: center;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 30px;
