@@ -75,10 +75,12 @@ body {
     letter-spacing: 0.78px;
 }
 
+
+
 .nav-list {
     display: flex;
     gap: 50px;
-    margin-right: 334px;
+    margin-right: 344px;
 }
 
 .nav-link {
