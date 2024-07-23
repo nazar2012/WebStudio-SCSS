@@ -170,7 +170,7 @@
 }
 
 .portfolio-item{
-    flex-basis: calc((100% -90% ) / 3);
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 .portfolio-img{
