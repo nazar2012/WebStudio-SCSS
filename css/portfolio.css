@@ -169,6 +169,10 @@
     letter-spacing: 0.48px;
 }
 
+.portfolio-item{
+    flex-basis: calc(100% / 4);
+}
+
 .portfolio-name {
     color: var(--title-color);
     font-family: Roboto;
