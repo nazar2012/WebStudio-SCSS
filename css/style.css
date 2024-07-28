@@ -170,43 +170,16 @@ body {
     background-position: center;
 }
 
-.advantages-item-n::before{
-    content: "";
-    margin-bottom: 50px;
-    width: 270px;
-    height: 120px;
-    border-radius: 4px;
-    background: var(--backround);
+.advantages-item:nth-child(2)::before{
     background-image: url(../imges/clock.png);
-    display: block;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-.advantages-item-nt::before{
-    content: "";
-    margin-bottom: 50px;
-    width: 270px;
-    height: 120px;
-    border-radius: 4px;
-    background: var(--backround);
+.advantages-item:nth-child(3)::before{
     background-image: url(../imges/diagram.png);
-    display: block;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-.advantages-item-nth::before{
-    content: "";
-    margin-bottom: 50px;
-    width: 270px;
-    height: 120px;
-    border-radius: 4px;
-    background: var(--backround);
+.advantages-item:nth-child(4)::before{
     background-image: url(../imges/astronaut.png);
-    display: block;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .advantages-list {
