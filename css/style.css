@@ -27,6 +27,7 @@ body {
 
 .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../imges/backround-squoosh.jpg);
+    background-repeat: no-repeat;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
@@ -103,7 +104,7 @@ body {
     letter-spacing: 0.28px;
 }
 
-.nav-link:hover {
+.nav-link:hover, :focus {
     color: var(--accent-color);
 }
 
@@ -112,7 +113,7 @@ body {
     gap: 50px;
 }
 
-.header-item {
+.header-link{
     display: flex;
     align-items: center;
 }
@@ -121,12 +122,14 @@ body {
     width: 16px;
     height: 12px;
     margin-right: 10px;
+    fill: var(--added-text);
 }
 
 .header-im {
     width: 10px;
     height: 16px;
     margin-right: 10px;
+    fill: var(--added-text);
 }
 
 .header-link {
@@ -139,11 +142,10 @@ body {
     letter-spacing: 0.28px;
 }
 
-.header-item:hover {
-    .header-img {
+.header-item:hover,:focus {
+    .header-img, .header-im {
         fill: var(--accent-color);
     }
-
     .header-link {
         color: var(--accent-color);
     }
@@ -310,7 +312,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-top: 26px;
+    margin-top: 16px;
 }
 
 .team-svg {
@@ -330,7 +332,13 @@ body {
 
 .team-a:hover {
     background-color: #2196F3;
+    .team-svg {
+        fill: #fff;
+    }
+}
 
+.team-a:focus{
+    background-color: #2196F3;
     .team-svg {
         fill: #fff;
     }
@@ -371,7 +379,7 @@ body {
     border-radius: 4px;
 }
 
-.customers-a:hover {
+.customers-a:hover, :focus {
     border-color: #2196F3;
 
     .customers-svg {
@@ -481,6 +489,10 @@ body {
 }
 
 .social-icon:hover {
+    background-color: #2196F3;
+}
+
+.social-icon:focus{
     background-color: #2196F3;
 }
 
