@@ -28,6 +28,7 @@ body {
 .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../imges/backround-squoosh.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
@@ -104,7 +105,8 @@ body {
     letter-spacing: 0.28px;
 }
 
-.nav-link:hover, :focus {
+.nav-link:hover,
+:focus {
     color: var(--accent-color);
 }
 
@@ -113,7 +115,7 @@ body {
     gap: 50px;
 }
 
-.header-link{
+.header-link {
     display: flex;
     align-items: center;
 }
@@ -142,10 +144,14 @@ body {
     letter-spacing: 0.28px;
 }
 
-.header-item:hover,:focus {
-    .header-img, .header-im {
+.header-item:hover,
+:focus {
+
+    .header-img,
+    .header-im {
         fill: var(--accent-color);
     }
+
     .header-link {
         color: var(--accent-color);
     }
@@ -242,7 +248,6 @@ body {
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 1.08px;
 }
 
@@ -250,6 +255,26 @@ body {
     display: flex;
     margin-top: 50px;
     gap: 30px;
+}
+
+.work-box{
+    position: relative;
+}
+
+.work-btn {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.80);
+    border: none;
+    top: 224px;
 }
 
 .section-list {
@@ -337,14 +362,14 @@ body {
     }
 }
 
-.team-a:focus{
+.team-a:focus {
     background-color: #2196F3;
     .team-svg {
         fill: #fff;
     }
 }
 
-.customers{
+.customers {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -379,7 +404,8 @@ body {
     border-radius: 4px;
 }
 
-.customers-a:hover, :focus {
+.customers-a:hover,
+:focus {
     border-color: #2196F3;
 
     .customers-svg {
@@ -492,7 +518,7 @@ body {
     background-color: #2196F3;
 }
 
-.social-icon:focus{
+.social-icon:focus {
     background-color: #2196F3;
 }
 
