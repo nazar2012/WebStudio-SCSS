@@ -562,7 +562,6 @@ body {
     color: rgba(255, 255, 255, 0.60);
     font-family: Roboto;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 125%;
     letter-spacing: 0.48px;
@@ -655,7 +654,12 @@ body {
     margin-top: 4px;
     margin-bottom: 10px;
     display: block;
-    text-indent: 30px;
+    text-indent: 38px;
+}
+
+.modal-input:focus {
+    border: 1px solid #2196F3;
+    outline: none;
 }
 
 .modal-svg {
@@ -682,6 +686,11 @@ body {
     padding: 12px 16px;
     margin: 4px 0 25px 0;
     display: block;
+}
+
+.modal-comentt:focus {
+    border: 1px solid #2196F3;
+    outline: none;
 }
 
 .modal-span {
