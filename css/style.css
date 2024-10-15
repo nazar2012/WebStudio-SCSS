@@ -657,12 +657,19 @@ body {
     text-indent: 38px;
 }
 
-.modal-input:focus {
+.modal-input:focus,
+.modal-input:hover {
     border: 1px solid #2196F3;
     outline: none;
 }
 
+.modal-input:hover + .modal-svg,
+.modal-input:focus + .modal-svg{
+    fill: #2196F3;
+}
+
 .modal-svg {
+    fill: #212121;
     position: absolute;
     width: 20px;
     height: 20px;
@@ -688,7 +695,8 @@ body {
     display: block;
 }
 
-.modal-comentt:focus {
+.modal-comentt:focus,
+.modal-comentt:hover {
     border: 1px solid #2196F3;
     outline: none;
 }
@@ -745,6 +753,11 @@ body {
     margin-bottom: 20px;
 }
 
+.modal-btn:hover,
+.modal-btn:focus {
+    background: #188CE8;
+}
+
 .modal-close {
     width: 30px;
     height: 30px;
@@ -765,7 +778,8 @@ body {
     fill: black;
 }
 
-.modal-close:hover {
+.modal-close:hover,
+.modal-close:focus {
     .modal-exit {
         fill: rgba(33, 150, 243, 1);
     }
