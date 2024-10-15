@@ -65,6 +65,10 @@
     padding-bottom: 60px;
 }
 
+.footer-div {
+    margin-right: 74px;
+}
+
 .logo {
     color: var(--logo-color);
     font-family: Raleway;
@@ -304,6 +308,9 @@
     letter-spacing: 0.78px;
 }
 
+.social-section {
+    margin-right: 93px;
+}
 
 .social-text {
     color: #FFF;
@@ -360,7 +367,6 @@
 
 .footer-fv {
     display: flex;
-    gap: 70px;
     align-items: baseline;
 }
 

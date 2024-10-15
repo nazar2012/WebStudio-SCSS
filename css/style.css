@@ -54,6 +54,10 @@ body {
     background: var(--footer-backround);
 }
 
+.footer-div {
+    margin-right: 74px;
+}
+
 .logo {
     color: var(--logo-color);
     font-family: Raleway;
@@ -479,6 +483,10 @@ body {
     align-items: center;
 }
 
+.social-section {
+    margin-right: 93px;
+}
+
 .social-text {
     color: #FFF;
     font-family: Roboto;
@@ -534,7 +542,6 @@ body {
 
 .footer-fv {
     display: flex;
-    gap: 70px;
     align-items: baseline;
 }
 
@@ -663,8 +670,8 @@ body {
     outline: none;
 }
 
-.modal-input:hover + .modal-svg,
-.modal-input:focus + .modal-svg{
+.modal-input:hover+.modal-svg,
+.modal-input:focus+.modal-svg {
     fill: #2196F3;
 }
 
