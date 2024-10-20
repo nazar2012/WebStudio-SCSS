@@ -140,7 +140,8 @@
     transition: transform 1s;
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after,
+.nav-link:focus::after {
     opacity: 1;
     transform: scale(1);
 }
