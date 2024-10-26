@@ -109,6 +109,8 @@ body {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
+    transition-property: color;
+    transition-duration: 250ms;
 }
 
 .nav-link-1:hover {
@@ -142,10 +144,12 @@ body {
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
+    transition-property: color;
+    transition-duration: 250ms;
 }
 
 .nav-link:hover,
-:focus {
+.nav-link:focus {
     color: var(--accent-color);
 }
 
@@ -181,6 +185,8 @@ body {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
+    transition-property: color, fill;
+    transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-item:hover,
@@ -392,6 +398,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-property: background-color, fill;
+    transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-a:hover {
@@ -443,6 +451,8 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 4px;
+    transition-property: border-color, fill;
+    transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-a:hover,
@@ -557,6 +567,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon:hover {
@@ -697,6 +708,8 @@ body {
     margin-bottom: 10px;
     display: block;
     text-indent: 38px;
+    transition-property: border, outline;
+    transition-duration: 250ms;
 }
 
 .modal-input:focus,
@@ -735,6 +748,8 @@ body {
     padding: 12px 16px;
     margin: 4px 0 25px 0;
     display: block;
+    transition-property: border, outline;
+    transition-duration: 250ms;
 }
 
 .modal-comentt:focus,
@@ -793,11 +808,19 @@ body {
     margin-right: 120px;
     margin-top: 30px;
     margin-bottom: 20px;
+    transition-property: background-color;
+    transition-duration: 250ms;
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
-    background: #188CE8;
+    background-color: #188CE8;
+}
+
+.modal-exit {
+    width: 18px;
+    height: 18px;
+    fill: black;
 }
 
 .modal-close {
@@ -812,12 +835,8 @@ body {
     position: absolute;
     top: 8px;
     right: 8px;
-}
-
-.modal-exit {
-    width: 18px;
-    height: 18px;
-    fill: black;
+    transition-property: fill;
+    transition-duration: 250ms;
 }
 
 .modal-close:hover,
