@@ -274,8 +274,6 @@
 
 .portfolio-item {
     flex-basis: calc((100% - 60px) / 3);
-    position: relative;
-    overflow: hidden;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -286,7 +284,13 @@
 
     .portfolio-p {
         opacity: 1;
+        transform: translateY(0);
     }
+}
+
+.portfolio-box {
+    position: relative;
+    overflow: hidden;
 }
 
 .portfolio-img {
@@ -295,20 +299,24 @@
 
 .portfolio-p {
     position: absolute;
+    width: 370px;
+    height: 294px;
+    opacity: 0;
     top: 0;
     left: 0;
-    height: 294px;
+    padding: 63px 24px 63px 24px;
     background-color: rgba(33, 150, 243, 0.9);
-    opacity: 0;
-    width: 370px;
     color: var(--main-backround);
     font-family: Roboto;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.55;
     letter-spacing: 0.54px;
-    padding: 63px 24px 63px 24px;
-    transition-property: opacity;
+    transform: translateY(100%);
+    transition-property: opacity, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
