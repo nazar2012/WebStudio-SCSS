@@ -1,0 +1,124 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: var(--footer-backround);
+}
+
+.footer-div {
+    margin-right: 74px;
+}
+
+.social-section {
+    margin-right: 93px;
+}
+
+.social-text {
+    color: var(--main-backround);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--icon-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icon:hover {
+    background-color: var(--accent-color);
+}
+
+.social-icon:focus {
+    background-color: var(--accent-color);
+}
+
+.footer-svg {
+    width: 20px;
+    height: 20px;
+    margin-top: 32px;
+    margin: 12px;
+    fill: var(--main-backround);
+}
+
+.footer-fv {
+    display: flex;
+    align-items: baseline;
+}
+
+.address {
+    margin-top: 20px;
+    font-style: normal;
+}
+
+.address-item {
+    margin-top: 9px;
+}
+
+.address-list {
+    margin-top: 9px;
+}
+
+.address-text {
+    color: var(--main-backround);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+}
+
+.address-link {
+    color: var(--added-text);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+}
+
+.footer-logo-span {
+    color: var(--accent-color);
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+}
+
+.footer-logo {
+    color: var(--main-backround);
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+}
