@@ -1,10 +1,10 @@
-.portfolio-div {
-    border: 1px solid var(--background);
-    padding: 24px 20px;
-}
-
 .portfolio {
     padding-bottom: 94px;
+}
+
+.portfolio-div {
+    border: 1px solid $backround;
+    padding: 24px 20px;
 }
 
 .portfolio-item {
@@ -41,7 +41,7 @@
     left: 0;
     padding: 63px 24px 63px 24px;
     background-color: rgba(33, 150, 243, 0.9);
-    color: var(--main-backround);
+    color: $main-backround;
     font-family: Roboto;
     font-size: 18px;
     font-weight: 400;
@@ -57,7 +57,7 @@
 }
 
 .portfolio-name {
-    color: var(--title-color);
+    color: $title-color;
     font-family: Roboto;
     font-size: 18px;
     font-style: normal;
@@ -68,7 +68,7 @@
 }
 
 .portfolio-text {
-    color: var(--added-text);
+    color: $added-text;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;

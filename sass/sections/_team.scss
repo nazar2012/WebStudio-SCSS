@@ -1,101 +1,101 @@
 .team {
-    background: var(--team-backround);
+    background: $team-backround;
     padding-top: 94px;
     padding-bottom: 94px;
-}
 
-.section-list {
-    display: flex;
-    gap: 30px;
-}
-
-.team-title {
-    color: var(--title-color);
-    text-align: center;
-    font-family: Roboto;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.08px;
-    margin-bottom: 50px;
-}
-
-.team-name {
-    color: var(--title-color);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.48px;
-}
-
-.team-text {
-    color: var(--added-text);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.48px;
-    margin-top: 10px;
-}
-
-.section-list-item {
-    border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
-}
-
-.team-div {
-    border-radius: 0px 0px 4px 4px;
-    background: var(--main-backround);
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.team-ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 16px;
-}
-
-.team-svg {
-    width: 20px;
-    height: 20px;
-    fill: var(--svg-color);
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.team-a {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.team-a:hover {
-    background-color: var(--accent-color);
-
-    .team-svg {
-        fill: var(--main-backround);
+    &__list {
+        display: flex;
+        gap: 30px;
     }
-}
 
-.team-a:focus {
-    background-color: var(--accent-color);
+    &__title {
+        color: $title-color;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.08px;
+        margin-bottom: 50px;
+    }
 
-    .team-svg {
-        fill: var(--main-backround);
+    &__name {
+        color: $title-color;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.48px;
+    }
+
+    &__text {
+        color: $added-text;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.48px;
+        margin-top: 10px;
+    }
+
+    &__item {
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+    }
+
+    &__div {
+        border-radius: 0px 0px 4px 4px;
+        background: $main-backround;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 16px;
+    }
+
+    &__a {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__svg {
+        width: 20px;
+        height: 20px;
+        fill: $svg-color;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__a:hover {
+        background-color: $accent-color;
+
+        &__svg {
+            fill: $main-backround;
+        }
+    }
+
+    &__a:focus {
+        background-color: $accent-color;
+
+        &__svg {
+            fill: $main-backround;
+        }
     }
 }
