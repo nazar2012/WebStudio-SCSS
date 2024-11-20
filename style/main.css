@@ -35,7 +35,7 @@ body {
   padding-top: 24px;
   padding-bottom: 25px;
 }
-.header__css {
+.header__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,7 +73,7 @@ body {
   margin-right: 10px;
   fill: #757575;
 }
-.header__im {
+.header__image {
   width: 10px;
   height: 16px;
   margin-right: 10px;
@@ -94,9 +94,9 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header__item:hover__img, .header__item:hover__im,
+.header__item:hover__img, .header__item:hover__image,
 .header :focus__img,
-.header :focus__im {
+.header :focus__image {
   fill: #2196F3;
 }
 .header__item:hover__link,
@@ -112,7 +112,7 @@ body {
   gap: 50px;
   margin-right: 290px;
 }
-.nav__link-1 {
+.nav__links {
   color: #2196F3;
   font-family: Roboto;
   font-size: 14px;
@@ -123,10 +123,10 @@ body {
   transition-property: color;
   transition-duration: 250ms;
 }
-.nav__link-1:hover {
+.nav__links:hover {
   color: #2196F3;
 }
-.nav__link-1::after {
+.nav__links::after {
   content: "";
   display: block;
   width: 100%;
@@ -167,7 +167,7 @@ body {
   opacity: 1;
   transform: scale(1);
 }
-.nav__link-2 {
+.nav__links {
   color: #2196F3;
   font-family: Roboto;
   font-size: 14px;
@@ -178,10 +178,10 @@ body {
   transition-property: color;
   transition-duration: 250ms;
 }
-.nav__link-2:hover {
+.nav__links:hover {
   color: #2196F3;
 }
-.nav__link-2::after {
+.nav__links::after {
   content: "";
   display: block;
   width: 100%;
@@ -367,21 +367,21 @@ body {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
-.team__div {
+.team__container {
   border-radius: 0px 0px 4px 4px;
   background: #FFF;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.team__ul {
+.team__lists {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   margin-top: 16px;
 }
-.team__a {
+.team__link {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -400,16 +400,16 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team__a:hover {
+.team__link:hover {
   background-color: #2196F3;
 }
-.team__a:hover__svg {
+.team__link:hover__svg {
   fill: #FFF;
 }
-.team__a:focus {
+.team__link:focus {
   background-color: #2196F3;
 }
-.team__a:focus__svg {
+.team__link:focus__svg {
   fill: #FFF;
 }
 
@@ -434,7 +434,7 @@ body {
   letter-spacing: 1.08px;
   margin-bottom: 50px;
 }
-.customers__a {
+.customers__link {
   padding: 16px 30px;
   border: 2px solid #e0e0e0;
   display: flex;
@@ -453,10 +453,10 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.customers__a:hover, .customers__a:focus {
+.customers__link:hover, .customers__link:focus {
   border-color: #2196F3;
 }
-.customers__a:hover__svg, .customers__a:focus__svg {
+.customers__link:hover__svg, .customers__link:focus__svg {
   fill: #2196F3;
 }
 
@@ -465,7 +465,7 @@ body {
   padding-bottom: 60px;
   background: #2F303A;
 }
-.footer__div {
+.footer__address {
   margin-right: 74px;
 }
 .footer__svg {
@@ -475,7 +475,7 @@ body {
   margin: 12px;
   fill: #FFF;
 }
-.footer__fv {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
@@ -519,14 +519,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.social__icon {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social__icon:hover {
@@ -562,7 +554,7 @@ body {
   letter-spacing: 0.42px;
 }
 
-.form__p {
+.form__text {
   color: #FFF;
   font-family: Roboto;
   font-size: 14px;
@@ -863,7 +855,7 @@ body {
   padding-bottom: 94px;
 }
 
-.portfolio-div {
+.portfolio-content {
   border: 1px solid #F5F4FA;
   padding: 24px 20px;
 }
@@ -878,7 +870,7 @@ body {
 .portfolio-item:hover {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
-.portfolio-item:hover .portfolio-p {
+.portfolio-item:hover .portfolio-text {
   opacity: 1;
   transform: translateY(0);
 }
@@ -892,7 +884,7 @@ body {
   width: 100%;
 }
 
-.portfolio-p {
+.portfolio-text {
   position: absolute;
   width: 370px;
   height: 294px;
@@ -927,7 +919,7 @@ body {
   margin-bottom: 4px;
 }
 
-.portfolio-text {
+.portfolio-subtitle {
   color: #757575;
   font-family: Roboto;
   font-size: 16px;

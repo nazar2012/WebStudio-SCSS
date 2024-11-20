@@ -3,7 +3,7 @@
     padding-bottom: 60px;
     background: $footer-backround;
 
-    &__div {
+    &__address {
         margin-right: 74px;
     }
 
@@ -15,7 +15,7 @@
         fill: $main-backround;
     }
 
-    &__fv {
+    &__container {
         display: flex;
         align-items: baseline;
     }
@@ -64,15 +64,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    &__icon {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
@@ -116,7 +107,7 @@
 }
 
 .form {
-    &__p {
+    &__text {
         color: $main-backround;
         font-family: Roboto;
         font-size: 14px;

@@ -21,7 +21,7 @@
         margin-bottom: 50px;
     }
 
-    &__a {
+    &__link {
         padding: 16px 30px;
         border: 2px solid $a-color;
         display: flex;
@@ -42,8 +42,8 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &__a:hover,
-    &__a:focus {
+    &__link:hover,
+    &__link:focus {
         border-color: $accent-color;
 
         &__svg {
