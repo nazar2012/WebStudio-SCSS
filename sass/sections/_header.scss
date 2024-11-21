@@ -46,6 +46,11 @@
         fill: $added-text;
     }
 
+    &__img:hover,
+    &__img:focus {
+        fill: $accent-color;
+    }
+
     &__image {
         width: 10px;
         height: 16px;
@@ -54,6 +59,11 @@
         transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__image:hover,
+    &__image:focus {
+        fill: $accent-color;
     }
 
     &__link {
@@ -69,17 +79,9 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &__item:hover,
-    :focus {
-
-        &__img,
-        &__image {
-            fill: $accent-color;
-        }
-
-        &__link {
-            color: $accent-color;
-        }
+    &__link:hover,
+    &__link:focus{
+        color: $accent-color;
     }
 }
 

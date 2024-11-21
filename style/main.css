@@ -73,6 +73,9 @@ body {
   margin-right: 10px;
   fill: #757575;
 }
+.header__img:hover, .header__img:focus {
+  fill: #2196F3;
+}
 .header__image {
   width: 10px;
   height: 16px;
@@ -81,6 +84,9 @@ body {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__image:hover, .header__image:focus {
+  fill: #2196F3;
 }
 .header__link {
   color: #757575;
@@ -94,13 +100,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header__item:hover__img, .header__item:hover__image,
-.header :focus__img,
-.header :focus__image {
-  fill: #2196F3;
-}
-.header__item:hover__link,
-.header :focus__link {
+.header__link:hover, .header__link:focus {
   color: #2196F3;
 }
 
