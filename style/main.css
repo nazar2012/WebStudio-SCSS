@@ -453,11 +453,11 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.customers__svg:hover {
+  fill: #2196F3;
+}
 .customers__link:hover, .customers__link:focus {
   border-color: #2196F3;
-}
-.customers__link:hover__svg, .customers__link:focus__svg {
-  fill: #2196F3;
 }
 
 .footer {

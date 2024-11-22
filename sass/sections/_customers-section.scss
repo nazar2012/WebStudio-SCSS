@@ -42,12 +42,12 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
+    &__svg:hover {
+        fill: $accent-color;
+    }
+
     &__link:hover,
     &__link:focus {
         border-color: $accent-color;
-
-        &__svg {
-            fill: $accent-color;
-        }
     }
 }
