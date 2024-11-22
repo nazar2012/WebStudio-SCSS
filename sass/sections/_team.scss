@@ -13,9 +13,7 @@
         text-align: center;
         font-family: Roboto;
         font-size: 36px;
-        font-style: normal;
         font-weight: 700;
-        line-height: normal;
         letter-spacing: 1.08px;
         margin-bottom: 50px;
     }
@@ -24,9 +22,7 @@
         color: $title-color;
         font-family: Roboto;
         font-size: 16px;
-        font-style: normal;
         font-weight: 500;
-        line-height: normal;
         letter-spacing: 0.48px;
     }
 
@@ -34,9 +30,7 @@
         color: $added-text;
         font-family: Roboto;
         font-size: 16px;
-        font-style: normal;
         font-weight: 400;
-        line-height: normal;
         letter-spacing: 0.48px;
         margin-top: 10px;
     }
@@ -72,6 +66,11 @@
         transition-property: background-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            background-color: $accent-color;
+        }
     }
 
     &__svg {
@@ -81,20 +80,9 @@
         transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
 
-    &__link:hover {
-        background-color: $accent-color;
-
-        &__svg {
-            fill: $main-backround;
-        }
-    }
-
-    &__link:focus {
-        background-color: $accent-color;
-
-        &__svg {
+        &:hover,
+        &:focus {
             fill: $main-backround;
         }
     }
