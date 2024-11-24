@@ -50,18 +50,7 @@
     }
 
     &__input {
-        font-family: 'Inter';
-        width: 448px;
-        height: 40px;
-        border-radius: 4px;
-        border: 1px solid rgba(33, 33, 33, 0.20);
-        margin-top: 4px;
-        margin-bottom: 10px;
-        display: block;
-        text-indent: 38px;
-        transition-property: border, outline;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include modal-input();
 
         &:focus,
         &:hover {
@@ -76,35 +65,11 @@
     }
 
     &__svg {
-        fill: $title-color;
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        margin-left: 12px;
-        margin-bottom: 7px;
-        margin-right: 15px;
-        transition-property: fill;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include modal-svg();
     }
 
     &__comentt {
-        width: 448px;
-        height: 120px;
-        flex-shrink: 0;
-        border-radius: 4px;
-        border: 1px solid rgba(33, 33, 33, 0.20);
-        color: rgba(117, 117, 117, 0.50);
-        font-size: 12px;
-        font-weight: 400;
-        letter-spacing: 0.12px;
-        resize: none;
-        padding: 12px 16px;
-        margin: 4px 0 25px 0;
-        display: block;
-        transition-property: border, outline;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+       @include modal-comett();
 
         &:focus,
         &:hover {
@@ -135,9 +100,7 @@
     }
 
     &__check {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex($wrap: nowrap);
     }
 
     &__checkbox {
@@ -146,24 +109,7 @@
     }
 
     &__btn {
-        color: $main-backround;
-        text-align: center;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 1.87;
-        letter-spacing: 0.96px;
-        border-radius: 4px;
-        background: $accent-color;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-        padding: 10px 52px;
-        border: none;
-        margin-left: 120px;
-        margin-right: 120px;
-        margin-top: 30px;
-        margin-bottom: 20px;
-        transition-property: background-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include modal-btn();
 
         &:hover,
         &:focus {
@@ -185,18 +131,21 @@
         height: 30px;
         border-radius: 50%;
         border: 1px solid rgba(0, 0, 0, 0.10);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex($wrap: nowrap);
         background-color: transparent;
         position: absolute;
         top: 8px;
         right: 8px;
+        transition-property: border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &__close:hover,
     &__close:focus {
-        &__exit {
+        border-color: rgba(33, 150, 243, 1);
+
+        .modal__exit {
             fill: rgba(33, 150, 243, 1);
         }
     }

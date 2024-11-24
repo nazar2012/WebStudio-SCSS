@@ -49,9 +49,7 @@
     }
 
     &__lists {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex($wrap:nowrap);
         gap: 10px;
         margin-top: 16px;
     }
@@ -60,16 +58,18 @@
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex($wrap:nowrap);
         transition-property: background-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-        &:hover,
-        &:focus {
-            background-color: $accent-color;
+    &__link:hover,
+    &__link:focus {
+        background-color: $accent-color;
+
+        .team__svg {
+            fill: $main-backround;
         }
     }
 
@@ -80,10 +80,5 @@
         transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-        &:hover,
-        &:focus {
-            fill: $main-backround;
-        }
     }
 }

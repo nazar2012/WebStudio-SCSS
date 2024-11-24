@@ -3,9 +3,7 @@
     padding-bottom: 94px;
 
     &__list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex($wrap:nowrap);
         gap: 30px;
     }
 
@@ -24,9 +22,7 @@
     &__link {
         padding: 16px 30px;
         border: 2px solid $a-color;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex($wrap:nowrap);
         border-radius: 4px;
         transition-property: border-color;
         transition-duration: 250ms;
@@ -42,12 +38,12 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &__svg:hover {
-        fill: $accent-color;
-    }
-
     &__link:hover,
     &__link:focus {
         border-color: $accent-color;
+
+        .customers__svg {
+            fill: $accent-color;
+        }
     }
 }

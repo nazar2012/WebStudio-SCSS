@@ -2,14 +2,13 @@
     padding-top: 94px;
 
     &__item::before {
-        content: "";
+        @include content();
         margin-bottom: 30px;
         width: 270px;
         height: 120px;
         border-radius: 4px;
         background: $backround;
         background-image: url(../imges/antenna.png);
-        display: block;
         background-repeat: no-repeat;
         background-position: center;
     }

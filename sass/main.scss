@@ -2,6 +2,8 @@
 @import "./base/container";
 @import "./base/commem";
 @import "./base/root";
+@import "./utils/placeholder";
+@import "./utils/mixin";
 
 @import "./sections/header";
 @import "./sections/hero";
@@ -11,5 +13,4 @@
 @import "./sections/customers-section";
 @import "./sections/footer";
 @import "./sections/modal";
-@import "./sections/hiro";
 @import "./sections/portfolio";
