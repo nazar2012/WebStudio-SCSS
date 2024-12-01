@@ -3,8 +3,14 @@
     padding-bottom: 94px;
 
     &__list {
-        @include flex($wrap:nowrap);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         gap: 30px;
+
+        @media screen and (min-width: 1200px) {
+            flex-wrap: nowrap;
+        }
     }
 
     &__text {
@@ -13,20 +19,37 @@
         color: $title-color;
         text-align: center;
         font-family: Roboto;
-        font-size: 36px;
+        font-size: 28px;
         font-weight: 700;
-        letter-spacing: 1.08px;
+        letter-spacing: 0.84px;
         margin-bottom: 50px;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 36px;
+            letter-spacing: 1.08px;
+        }
     }
 
     &__link {
-        padding: 16px 30px;
+        padding: 16px 52px;
+        width: 210px;
+        height: 92px;
         border: 2px solid $a-color;
-        @include flex($wrap:nowrap);
+        @include flex($wrap: nowrap);
         border-radius: 4px;
         transition-property: border-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media screen and (min-width: 768px) {
+            padding: 16px 60px;
+            width: 226px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding: 16px 32px;
+            width: 175px;
+        }
     }
 
     &__svg {

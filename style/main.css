@@ -317,19 +317,36 @@ body {
 }
 
 .advantages {
-  padding-top: 94px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-top: 94px;
+  }
 }
 .advantages__item::before {
   content: "";
   display: block;
   margin-bottom: 30px;
-  width: 270px;
+  width: 450px;
   height: 120px;
   border-radius: 4px;
   background: #F5F4FA;
   background-image: url(../imges/antenna.png);
   background-repeat: no-repeat;
   background-position: center;
+}
+@media screen and (min-width: 768px) {
+  .advantages__item::before {
+    width: 354px;
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__item::before {
+    width: 270px;
+    height: 120px;
+  }
 }
 .advantages__item:nth-child(2)::before {
   background-image: url(../imges/clock.png);
@@ -342,8 +359,20 @@ body {
 }
 .advantages__list {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .advantages__list {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__list {
+    justify-content: center;
+    flex-direction: row;
+  }
 }
 .advantages__title {
   color: #212121;
@@ -361,12 +390,28 @@ body {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
-  width: 270px;
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .advantages__text {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__text {
+    width: 270px;
+  }
 }
 
 .work {
   padding-top: 94px;
   padding-bottom: 94px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+  }
 }
 .work__text {
   color: #212121;
@@ -402,21 +447,59 @@ body {
 
 .team {
   background: #F5F4FA;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding: 94px 0;
+  }
 }
 .team__list {
   display: flex;
+  flex-direction: column;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    flex-direction: row;
+  }
+}
+.team__img {
+  width: 450px;
+  height: 460px;
+}
+@media screen and (min-width: 768px) {
+  .team__img {
+    width: 354px;
+    height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__img {
+    width: 270px;
+    height: 260px;
+  }
 }
 .team__title {
   color: #212121;
   text-align: center;
   font-family: Roboto;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
-  letter-spacing: 1.08px;
+  letter-spacing: 0.84px;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    letter-spacing: 1.08px;
+  }
 }
 .team__name {
   color: #212121;
@@ -488,10 +571,13 @@ body {
 .customers__list {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .customers__list {
+    flex-wrap: nowrap;
+  }
 }
 .customers__text {
   display: flex;
@@ -499,13 +585,21 @@ body {
   color: #212121;
   text-align: center;
   font-family: Roboto;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
-  letter-spacing: 1.08px;
+  letter-spacing: 0.84px;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 1200px) {
+  .customers__text {
+    font-size: 36px;
+    letter-spacing: 1.08px;
+  }
+}
 .customers__link {
-  padding: 16px 30px;
+  padding: 16px 52px;
+  width: 210px;
+  height: 92px;
   border: 2px solid #e0e0e0;
   display: flex;
   justify-content: center;
@@ -516,6 +610,18 @@ body {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .customers__link {
+    padding: 16px 60px;
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers__link {
+    padding: 16px 32px;
+    width: 175px;
+  }
 }
 .customers__svg {
   width: 106px;
@@ -557,16 +663,28 @@ body {
 .footer__span {
   color: #2196F3;
   font-family: Raleway;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  letter-spacing: 0.78px;
+  letter-spacing: 0.72px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__span {
+    font-size: 26px;
+    letter-spacing: 0.78;
+  }
 }
 .footer__logo {
   color: #FFF;
   font-family: Raleway;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  letter-spacing: 0.78px;
+  letter-spacing: 0.72px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    font-size: 26px;
+    letter-spacing: 0.78;
+  }
 }
 
 .social {

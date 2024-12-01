@@ -22,17 +22,27 @@
     &__span {
         color: $accent-color;
         font-family: Raleway;
-        font-size: 26px;
+        font-size: 24px;
         font-weight: 700;
-        letter-spacing: 0.78px;
+        letter-spacing: 0.72px;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 26px;
+            letter-spacing: 0.78;
+        }
     }
 
     &__logo {
         color: $main-backround;
         font-family: Raleway;
-        font-size: 26px;
+        font-size: 24px;
         font-weight: 700;
-        letter-spacing: 0.78px;
+        letter-spacing: 0.72px;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 26px;
+            letter-spacing: 0.78;
+        }
     }
 }
 
