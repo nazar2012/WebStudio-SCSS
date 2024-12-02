@@ -79,6 +79,17 @@
         text-align: center;
         padding-top: 30px;
         padding-bottom: 30px;
+        width: 450px;
+        height: 162px;
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+            height: 168px;
+        }
     }
 
     &__lists {

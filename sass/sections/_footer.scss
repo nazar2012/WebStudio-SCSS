@@ -1,10 +1,15 @@
 .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 0;
     background: $footer-backround;
 
     &__address {
         margin-right: 74px;
+    }
+
+    &__tablet {
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
     }
 
     &__svg {
@@ -16,7 +21,12 @@
     }
 
     &__container {
-        @include flex($justify: flex-start, $align: baseline, $wrap: nowrap);
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            justify-content: flex-start;
+            align-items: baseline;
+        }
     }
 
     &__span {
@@ -38,16 +48,30 @@
         font-size: 24px;
         font-weight: 700;
         letter-spacing: 0.72px;
+        margin-left: 163px;
+
+        @media screen and (min-width: 768px) {
+            margin-left: 115px;
+        }
 
         @media screen and (min-width: 1200px) {
             font-size: 26px;
             letter-spacing: 0.78;
+            margin-left: 0;
         }
     }
 }
 
 .social {
-    margin-right: 93px;
+    margin-top: 60px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 10px;
+    }
 
     &__text {
         color: $main-backround;
@@ -57,12 +81,25 @@
         letter-spacing: 0.42px;
         text-transform: uppercase;
         margin-bottom: 20px;
+        margin-left: 167px;
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 0;
+        }
     }
 
     &__icons {
         display: flex;
         justify-content: center;
         gap: 10px;
+
+        @media screen and (min-width: 768px) {
+            margin-left: 105px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 0;
+        }
     }
 
     &__icon {
@@ -85,9 +122,22 @@
 
 .address {
     margin-top: 20px;
+    margin-left: 85px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 76px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 0;
+        text-align: start;
+    }
 
     &__item {
         margin-top: 9px;
+
+        @media screen and (min-width: 768px) {}
     }
 
     &__list {
@@ -114,6 +164,13 @@
 }
 
 .form {
+    margin-top: 60px;
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 0;
+        margin-left: 93px;
+    }
+
     &__text {
         color: $main-backround;
         font-family: Roboto;
@@ -121,12 +178,28 @@
         font-weight: 700;
         letter-spacing: 0.42px;
         text-transform: uppercase;
+        margin-left: 137px;
+
+        @media screen and (min-width: 768px) {
+            margin-left: 270px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 0;
+        }
     }
 
     &__lable {
-        @include flex($wrap: nowrap);
+        display: flex;
+        justify-content: center;
+        align-items: center;
         gap: 12px;
         margin-top: 20px;
+        flex-wrap: wrap;
+
+        @media screen and (min-width: 1200px) {
+            flex-wrap: nowrap;
+        }
     }
 
     &__input {
@@ -139,13 +212,25 @@
         font-weight: 400;
         line-height: 125%;
         letter-spacing: 0.48px;
-        width: 358px;
+        width: 450px;
         height: 50px;
         border-radius: 4px;
         border: 1px solid rgba(255, 255, 255, 0.30);
-        background: rgba(33, 150, 243, 0.00);
+        background-color: rgba(33, 150, 243, 0.00);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         padding-left: 16px;
+
+        @media screen and (min-width: 768px) {
+            margin-right: 80px;
+            margin-left: 100px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 358px;
+            height: 50px;
+            margin-right: 0;
+            margin-left: 0;
+        }
     }
 
     &__btn {
@@ -164,6 +249,11 @@
         border: none;
         @include flex($wrap: nowrap);
         gap: 10px;
+        margin-top: 20px;
+
+        @media screen and (min-width: 1200px) {
+            margin-top: 0;
+        }
     }
 
     &__svg {
