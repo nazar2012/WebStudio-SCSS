@@ -19,6 +19,9 @@ p {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 .container {
@@ -327,13 +330,19 @@ body {
   content: "";
   display: block;
   margin-bottom: 30px;
-  width: 450px;
+  width: 100%;
   height: 120px;
   border-radius: 4px;
   background: #F5F4FA;
   background-image: url(../imges/antenna.png);
   background-repeat: no-repeat;
   background-position: center;
+}
+@media screen and (min-width: 480px) {
+  .advantages__item::before {
+    width: 450px;
+    height: 120px;
+  }
 }
 @media screen and (min-width: 768px) {
   .advantages__item::before {
@@ -389,7 +398,12 @@ body {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
-  width: 450px;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .advantages__text {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .advantages__text {
@@ -470,8 +484,14 @@ body {
   }
 }
 .team__img {
-  width: 450px;
-  height: 460px;
+  width: 100%;
+  height: 300px;
+}
+@media screen and (min-width: 480px) {
+  .team__img {
+    width: 450px;
+    height: 460px;
+  }
 }
 @media screen and (min-width: 768px) {
   .team__img {
@@ -525,8 +545,14 @@ body {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
-  width: 450px;
+  width: 100%;
   height: 162px;
+}
+@media screen and (min-width: 768px) {
+  .team__container {
+    width: 450px;
+    height: 162px;
+  }
 }
 @media screen and (min-width: 768px) {
   .team__container {
@@ -609,9 +635,8 @@ body {
   }
 }
 .customers__link {
-  padding: 16px 52px;
-  width: 210px;
-  height: 92px;
+  width: 130px;
+  height: 85px;
   border: 2px solid #e0e0e0;
   display: flex;
   justify-content: center;
@@ -622,6 +647,13 @@ body {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .customers__link {
+    padding: 16px 52px;
+    width: 210px;
+    height: 92px;
+  }
 }
 @media screen and (min-width: 768px) {
   .customers__link {
@@ -636,7 +668,7 @@ body {
   }
 }
 .customers__svg {
-  width: 106px;
+  width: 105px;
   height: 60px;
   fill: #AFB1B8;
   transition-property: fill;
@@ -655,7 +687,12 @@ body {
   background: #2F303A;
 }
 .footer__address {
-  margin-right: 74px;
+  margin-right: 0;
+}
+@media screen and (min-width: 480px) {
+  .footer__address {
+    margin-right: 74px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer__tablet {
@@ -695,11 +732,17 @@ body {
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 0.72px;
-  margin-left: 163px;
+  margin-left: 80px;
+}
+@media screen and (min-width: 480px) {
+  .footer__logo {
+    margin-left: 162px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer__logo {
-    margin-left: 115px;
+    text-align: center;
+    margin-left: 105px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -731,11 +774,12 @@ body {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 20px;
-  margin-left: 167px;
+  text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .social__text {
-    margin-left: 0;
+    margin-left: 3px;
+    text-align: start;
   }
 }
 .social__icons {
@@ -774,8 +818,13 @@ body {
 
 .address {
   margin-top: 20px;
-  margin-left: 85px;
+  margin-left: 8px;
   text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .address {
+    margin-left: 85px;
+  }
 }
 @media screen and (min-width: 768px) {
   .address {
@@ -801,6 +850,7 @@ body {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
+  flex-wrap: nowrap;
 }
 .address__link {
   color: #757575;
@@ -827,16 +877,16 @@ body {
   font-weight: 700;
   letter-spacing: 0.42px;
   text-transform: uppercase;
-  margin-left: 137px;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .form__text {
-    margin-left: 270px;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .form__text {
-    margin-left: 0;
+    margin-right: 360px;
   }
 }
 .form__lable {

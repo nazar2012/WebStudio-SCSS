@@ -31,15 +31,21 @@
     }
 
     &__link {
-        padding: 16px 52px;
-        width: 210px;
-        height: 92px;
+        // padding: 16px 52px;
+        width: 130px;
+        height: 85px;
         border: 2px solid $a-color;
         @include flex($wrap: nowrap);
         border-radius: 4px;
         transition-property: border-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media screen and (min-width: 480px) {
+            padding: 16px 52px;
+            width: 210px;
+            height: 92px;
+        }
 
         @media screen and (min-width: 768px) {
             padding: 16px 60px;
@@ -53,7 +59,7 @@
     }
 
     &__svg {
-        width: 106px;
+        width: 105px;
         height: 60px;
         fill: $svg-color;
         transition-property: fill;

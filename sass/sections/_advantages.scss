@@ -8,13 +8,18 @@
     &__item::before {
         @include content();
         margin-bottom: 30px;
-        width: 450px;
+        width: 100%;
         height: 120px;
         border-radius: 4px;
         background: $backround;
         background-image: url(../imges/antenna.png);
         background-repeat: no-repeat;
         background-position: center;
+
+        @media screen and (min-width: 480px) {
+            width: 450px;
+            height: 120px;
+        }
 
         @media screen and (min-width: 768px) {
             width: 354px;
@@ -72,7 +77,11 @@
         font-weight: 400;
         line-height: 1.71;
         letter-spacing: 0.42px;
-        width: 450px;
+        width: 100%;
+
+        @media screen and (min-width: 480px) {
+            width: 450px;
+        }
 
         @media screen and (min-width: 768px) {
             width: 354px;
