@@ -92,6 +92,10 @@
         margin-bottom: 20px;
         text-align: center;
 
+        @media screen and (min-width: 768px) {
+            margin-left: 100px;
+        }
+
         @media screen and (min-width: 1200px) {
             margin-left: 3px;
             text-align: start;
@@ -208,12 +212,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 12px;
+        gap: 20px;
         margin-top: 20px;
         flex-wrap: wrap;
 
+        @media screen and (min-width: 768px) {
+            flex-direction: column;
+        }
+
         @media screen and (min-width: 1200px) {
             flex-wrap: nowrap;
+            gap: 12px;
+            flex-direction: row;
         }
     }
 
@@ -234,11 +244,6 @@
         background-color: rgba(33, 150, 243, 0.00);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         padding-left: 16px;
-
-        @media screen and (min-width: 768px) {
-            margin-right: 80px;
-            margin-left: 100px;
-        }
 
         @media screen and (min-width: 1200px) {
             width: 358px;
@@ -264,7 +269,6 @@
         border: none;
         @include flex($wrap: nowrap);
         gap: 10px;
-        margin-top: 20px;
 
         @media screen and (min-width: 1200px) {
             margin-top: 0;
