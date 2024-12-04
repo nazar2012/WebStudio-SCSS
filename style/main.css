@@ -689,7 +689,7 @@ body {
 .footer__address {
   margin-right: 0;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .footer__address {
     margin-right: 74px;
   }
@@ -697,6 +697,7 @@ body {
 @media screen and (min-width: 768px) {
   .footer__tablet {
     display: flex;
+    justify-content: space-around;
   }
 }
 .footer__svg {
@@ -732,23 +733,24 @@ body {
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 0.72px;
+  text-align: center;
   margin-left: 80px;
 }
 @media screen and (min-width: 480px) {
   .footer__logo {
-    margin-left: 162px;
+    margin-left: 150px;
   }
 }
 @media screen and (min-width: 768px) {
   .footer__logo {
-    text-align: center;
-    margin-left: 105px;
+    margin-left: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__logo {
     font-size: 26px;
     letter-spacing: 0.78;
+    text-align: start;
     margin-left: 0;
   }
 }
@@ -776,14 +778,8 @@ body {
   margin-bottom: 20px;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
-  .social__text {
-    margin-left: 100px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .social__text {
-    margin-left: 3px;
     text-align: start;
   }
 }
@@ -791,11 +787,6 @@ body {
   display: flex;
   justify-content: center;
   gap: 10px;
-}
-@media screen and (min-width: 768px) {
-  .social__icons {
-    margin-left: 105px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .social__icons {
@@ -823,22 +814,10 @@ body {
 
 .address {
   margin-top: 20px;
-  margin-left: 8px;
   text-align: center;
-}
-@media screen and (min-width: 480px) {
-  .address {
-    margin-left: 85px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .address {
-    margin-left: 76px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .address {
-    margin-left: 0;
     text-align: start;
   }
 }
