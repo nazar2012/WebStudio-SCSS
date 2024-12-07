@@ -28,6 +28,7 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  outline: 1px solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -256,7 +257,7 @@ body {
 
 .line {
   background: #ECECEC;
-  width: 1500px;
+  width: 100%;
   height: 1px;
 }
 
@@ -1127,16 +1128,30 @@ body {
   fill: rgb(33, 150, 243);
 }
 
-.hiro {
+.portfolio {
+  padding-bottom: 94px;
+}
+.portfolio__hiro {
   padding-top: 94px;
   padding-bottom: 50px;
 }
-.hiro__list {
+.portfolio__lists {
   display: flex;
   gap: 8px;
-  justify-content: center;
+  flex-wrap: wrap;
 }
-.hiro__btn {
+@media screen and (min-width: 480px) {
+  .portfolio__lists {
+    max-width: 400px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__lists {
+    justify-content: center;
+    max-width: none;
+  }
+}
+.portfolio__btn {
   border-radius: 4px;
   background: #F5F4FA;
   color: #212121;
@@ -1146,16 +1161,18 @@ body {
   font-weight: 500;
   line-height: 1.625;
   letter-spacing: 0.48px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 22px;
-  padding-right: 22px;
+  padding: 6px 16px;
   border: none;
   transition-property: background-color, color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hiro__btn:hover, .hiro__btn:focus {
+@media screen and (min-width: 480px) {
+  .portfolio__btn {
+    padding: 6px 22px;
+  }
+}
+.portfolio__btn:hover, .portfolio__btn:focus {
   border-radius: 4px;
   background: #2196F3;
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
@@ -1166,10 +1183,6 @@ body {
   font-weight: 500;
   line-height: 1.625;
   letter-spacing: 0.48px;
-}
-
-.portfolio {
-  padding-bottom: 94px;
 }
 .portfolio__content {
   border: 1px solid #F5F4FA;
@@ -1193,16 +1206,19 @@ body {
   overflow: hidden;
 }
 .portfolio__img {
-  width: 100%;
+  height: 290px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__img {
+    width: 380px;
+  }
 }
 .portfolio__text {
   position: absolute;
-  width: 370px;
-  height: 294px;
   opacity: 0;
   top: 0;
   left: 0;
-  padding: 63px 24px 63px 24px;
+  padding: 30px 24px;
   background-color: rgba(33, 150, 243, 0.9);
   color: #FFF;
   font-family: Roboto;
@@ -1217,6 +1233,11 @@ body {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .portfolio__text {
+    padding: 77px 24px;
+  }
 }
 .portfolio__name {
   color: #212121;
@@ -1237,6 +1258,12 @@ body {
 }
 .portfolio__list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__list {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=main.css.map */
