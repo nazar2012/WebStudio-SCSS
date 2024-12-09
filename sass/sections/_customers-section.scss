@@ -4,9 +4,9 @@
 
     &__list {
         display: flex;
-        justify-content: center;
         flex-wrap: wrap;
         gap: 30px;
+        justify-content: center;
 
         @media screen and (min-width: 1200px) {
             flex-wrap: nowrap;
@@ -31,8 +31,7 @@
     }
 
     &__link {
-        // padding: 16px 52px;
-        width: 130px;
+        width: 100%;
         height: 85px;
         border: 2px solid $a-color;
         @include flex($wrap: nowrap);
@@ -42,19 +41,16 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
         @media screen and (min-width: 480px) {
-            padding: 16px 52px;
             width: 210px;
             height: 92px;
         }
 
         @media screen and (min-width: 768px) {
-            padding: 16px 60px;
             width: 226px;
         }
 
         @media screen and (min-width: 1200px) {
-            padding: 16px 32px;
-            width: 175px;
+            width: 170px;
         }
     }
 

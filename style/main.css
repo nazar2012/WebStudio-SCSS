@@ -609,9 +609,9 @@ body {
 }
 .customers__list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 @media screen and (min-width: 1200px) {
   .customers__list {
@@ -636,7 +636,7 @@ body {
   }
 }
 .customers__link {
-  width: 130px;
+  width: 100%;
   height: 85px;
   border: 2px solid #e0e0e0;
   display: flex;
@@ -651,21 +651,18 @@ body {
 }
 @media screen and (min-width: 480px) {
   .customers__link {
-    padding: 16px 52px;
     width: 210px;
     height: 92px;
   }
 }
 @media screen and (min-width: 768px) {
   .customers__link {
-    padding: 16px 60px;
     width: 226px;
   }
 }
 @media screen and (min-width: 1200px) {
   .customers__link {
-    padding: 16px 32px;
-    width: 175px;
+    width: 170px;
   }
 }
 .customers__svg {
@@ -1129,11 +1126,8 @@ body {
 }
 
 .portfolio {
-  padding-bottom: 94px;
-}
-.portfolio__hiro {
   padding-top: 94px;
-  padding-bottom: 50px;
+  padding-bottom: 94px;
 }
 .portfolio__lists {
   display: flex;
@@ -1189,10 +1183,20 @@ body {
   padding: 24px 20px;
 }
 .portfolio__item {
-  flex-basis: calc((100% - 60px) / 3);
+  flex-basis: 100%;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .portfolio__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 .portfolio__item:hover {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
@@ -1260,6 +1264,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-top: 50px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__list {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
 @media screen and (min-width: 1200px) {
   .portfolio__list {
