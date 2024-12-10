@@ -24,6 +24,10 @@ img {
   max-width: 100%;
 }
 
+address {
+  font-style: normal;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -1144,6 +1148,7 @@ body {
 .portfolio__lists {
   display: flex;
   gap: 8px;
+  row-gap: 15px;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 480px) {

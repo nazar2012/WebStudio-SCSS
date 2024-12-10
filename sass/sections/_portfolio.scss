@@ -5,6 +5,7 @@
     &__lists {
         display: flex;
         gap: 8px;
+        row-gap: 15px;
         flex-wrap: wrap;
 
         @media screen and (min-width: 480px) {
