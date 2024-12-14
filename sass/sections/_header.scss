@@ -33,6 +33,21 @@
         }
     }
 
+    &__btn {
+        border: none;
+        background-color: transparent;
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__menu {
+        width: 40px;
+        height: 40px;
+        fill: $logo-color;
+    }
+
     &__span {
         color: $accent-color;
         font-family: Raleway;
@@ -205,6 +220,85 @@
             position: absolute;
             top: 35px;
         }
+    }
+}
+
+.menu {
+    background-color: $main-backround;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04), 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+    padding: 48px 0px 48px 40px;
+    opacity: 1;
+    z-index: 1;
+    position: fixed;
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.menu__btn {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.menu__close {
+    width: 40px;
+    height: 40px;
+    fill: $title-color;
+}
+
+.menu__item:first-child {
+    margin-bottom: 36px;
+}
+
+.menu__item:nth-child(2) {
+    margin-bottom: 32px;
+}
+
+.menu__link {
+    color: $title-color;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.8px;
+}
+
+.menu__link:hover {
+    color: $accent-color;
+}
+
+.menu__list-contact {
+    margin-top: 200px;
+}
+
+.menu__item-contact:first-child {
+    margin-bottom: 32px;
+}
+
+.menu__link-contact {
+    color: $added-text;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.16;
+    letter-spacing: 0.48px;
+}
+
+.menu__item-contact:first-child {
+    .menu__link-contact {
+        color: $accent-color;
+        font-size: 34px;
+        line-height: 1.17;
+        letter-spacing: 0.68px;
     }
 }
 
