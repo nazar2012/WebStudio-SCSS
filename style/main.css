@@ -1343,6 +1343,7 @@ body {
 }
 .portfolio__img {
   height: 290px;
+  z-index: -1;
 }
 @media screen and (min-width: 1200px) {
   .portfolio__img {
