@@ -105,6 +105,7 @@
         background-color: rgba(33, 150, 243, 0.9);
         color: $main-backround;
         font-family: Roboto;
+        height: 290px;
         font-size: 18px;
         font-weight: 400;
         line-height: 1.55;
@@ -152,7 +153,7 @@
             flex-direction: row;
         }
 
-        @media screen and (min-width: 1200px){
+        @media screen and (min-width: 1200px) {
             flex-wrap: wrap;
             flex-direction: row;
         }

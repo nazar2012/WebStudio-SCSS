@@ -128,12 +128,22 @@
                     <li class="work__item">
                         <div class="work__box">
                             <button class="work__btn" type="button">Мобільні додатки</button>
+                            <picture>
+                                <source
+                                    srcset="./imges/desktop/computer-desktop@1x.webp 1x, ./imges/desktop/computer-desktop@2x.webp 2x"
+                                    media="(min-width: 1200px)">
+                            </picture>
                             <img class="work__img" src="./imges/computer-squoosh.jpg" alt="work">
                         </div>
                     </li>
                     <li class="work__item">
                         <div class="work__box">
                             <button class="work__btn" type="button">Дизайнерські рішення</button>
+                            <picture>
+                                <source
+                                    src="./imges/desktop/style-desktop@1x.webp 1x, ./imges/desktop/style-desktop@2x.webp 2x"
+                                    media="(min-width: 1200px)">
+                            </picture>
                             <img class="work__img" src="./imges/style-squoosh.jpg" alt="work">
                         </div>
                     </li>
@@ -146,7 +156,21 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__item">
-                        <img class="team__img" src="./imges/igor-squoosh.jpg" alt="Ігор">
+                        <picture>
+                            <source srcset="
+                                  ./imges/desktop/igor-desktop@2x.webp 2x,
+                                  ./imges/desktop/igor-desktop@1x.webp 1x
+                                " media="(min-width: 1200px)" />
+                            <source srcset="
+                                  ./imges/tablet/igor-tablet@2x.webp 2x,
+                                  ./imges/tablet/igor-tablet@1x.webp 1x
+                                " media="(min-width: 768px)" />
+                            <source srcset="
+                                  ./imges/mobile/igor-mobile@2x.webp 2x,
+                                  ./imges/mobile/igor-mobile@1x.webp 1x
+                                " media="(max-width: 767px)" />
+                            <img class="team__img" src="./imges/igor-squoosh.jpg" alt="Ігор">
+                        </picture>
                         <div class="team__container">
                             <h3 class="team__name">Ігор Дем'яненко</h3>
                             <p class="team__text">Product Designer</p>
@@ -183,7 +207,21 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./imges/olga-squoosh.jpg" alt="Ольга">
+                        <picture>
+                            <source srcset="
+                            ./imges/desktop/olga-desktop@2x.webp 2x,
+                            ./imges/desktop/olga-desktop@1x.webp 1x
+                          " media="(min-width: 1200px)" />
+                            <source srcset="
+                            ./imges/tablet/olga-tablet@2x.webp 2x,
+                            ./imges/tablet/olga-tablet@1x.webp 1x
+                          " media="(min-width: 768px)" />
+                            <source srcset="
+                            ./imges/mobile/olga-mobile@2x.webp 2x,
+                            ./imges/mobile/olga-mobile@1x.webp 1x
+                          " media="(max-width: 767px)" />
+                            <img class="team__img" src="./imges/olga-squoosh.jpg" alt="Ольга">
+                        </picture>
                         <div class="team__container">
                             <h3 class="team__name">Ольга Рєпіна</h3>
                             <p class="team__text">Frontend Developer</p>
@@ -220,7 +258,21 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./imges/kola-squoosh.jpg" alt="Микола">
+                        <picture>
+                            <source srcset="
+                            ./imges/desktop/kola-desktop@2x.webp 2x,
+                            ./imges/desktop/kola-desktop@1x.webp 1x
+                          " media="(min-width: 1200px)" />
+                            <source srcset="
+                            ./imges/tablet/kola-tablet@2x.webp 2x,
+                            ./imges/tablet/kola-tablet@1x.webp 1x
+                          " media="(min-width: 768px)" />
+                            <source srcset="
+                            ./imges/mobile/kola-mobile@2x.webp 2x,
+                            ./imges/mobile/kola-mobile@1x.webp 1x
+                          " media="(max-width: 767px)" />
+                            <img class="team__img" src="./imges/kola-squoosh.jpg" alt="Микола">
+                        </picture>
                         <div class="team__container">
                             <h3 class="team__name">Микола Тарасов</h3>
                             <p class="team__text">Marketing</p>
@@ -257,7 +309,21 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./imges/misha-squoosh.jpg" alt="Михайло">
+                        <picture>
+                            <source srcset="
+                            ./imges/desktop/misha-desktop@2x.webp 2x,
+                            ./imges/desktop/misha-desktop@1x.webp 1x
+                          " media="(min-width: 1200px)" />
+                            <source srcset="
+                            ./imges/tablet/misha-tablet@2x.webp 2x,
+                            ./imges/tablet/misha-tablet@1x.webp 1x
+                          " media="(min-width: 768px)" />
+                            <source srcset="
+                            ./imges/mobile/misha-mobile@2x.webp 2x,
+                            ./imges/mobile/misha-mobile@1x.webp 1x
+                          " media="(max-width: 767px)" />
+                            <img class="team__img" src="./imges/misha-squoosh.jpg" alt="Михайло">
+                        </picture>
                         <div class="team__container">
                             <h3 class="team__name">Михайло Єрмаков</h3>
                             <p class="team__text">UI Designer</p>
