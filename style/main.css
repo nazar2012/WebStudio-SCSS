@@ -81,12 +81,18 @@ body {
 }
 .header__logo {
   color: #000;
-  font-family: Raleway;
-  font-size: 24px;
-  line-height: 1.38;
+  font-family: "Raleway";
   font-weight: 700;
+  line-height: 1.38;
+  font-size: 24px;
+  letter-spacing: 0.78px;
   margin-right: auto;
-  letter-spacing: 0.72px;
+  background: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/b6d69a19730059.562fc1b737102.gif);
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }
 @media screen and (min-width: 768px) {
   .header__logo {
