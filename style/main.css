@@ -1004,6 +1004,7 @@ body {
 @media screen and (min-width: 1200px) {
   .form {
     margin-top: 0;
+    margin-left: 91px;
   }
 }
 .form__text {
