@@ -13,3 +13,21 @@
     document.body.classList.toggle("no-scroll");
   }
 })();
+
+const modelEl = document.querySelector(".backdrop")
+window.addEventListener("keydown", onEscClose)
+
+function onEscClose(event) {
+  if (event.code === "Escape") {
+    modelEl.classList.toggle("is-hidden")
+  }
+}
+
+modelEl.addEventListener("click", onBackdropClick)
+function onBackdropClick (event) {
+  console.log(event.target);
+  console.log(event.currentTarget);
+  if (event.target === event.currentTarget) {
+    modelEl.classList.toggle("is-hidden")
+  }
+}
